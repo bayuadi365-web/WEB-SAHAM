@@ -11,6 +11,7 @@ Route::get('/', [StockController::class, 'dashboard'])->name('home');
 Route::get('/stocks', [StockController::class, 'index'])->name('stocks.index');
 Route::get('/stocks/{ticker}', [StockController::class, 'show'])->name('stocks.show');
 Route::get('/screener', Screener::class)->name('screener');
+Route::get('/scalping', \App\Livewire\DailyScalper::class)->name('scalping');
 Route::get('/watchlist', [WatchlistController::class, 'index'])->name('watchlist');
 Route::get('/news', [NewsController::class, 'index'])->name('news.index');
 

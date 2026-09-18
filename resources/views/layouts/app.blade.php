@@ -39,7 +39,11 @@
         <nav class="app-tabs-nav">
             <button class="tab-btn {{ request()->routeIs('home') ? 'active' : '' }}" onclick="window.location.href='{{ route('home') }}'">
                 <i data-lucide="zap"></i>
-                <span>Screener Scalping</span>
+                <span>Screener Utama</span>
+            </button>
+            <button class="tab-btn {{ request()->routeIs('scalping') ? 'active' : '' }}" onclick="window.location.href='{{ route('scalping') }}'">
+                <i data-lucide="flame"></i>
+                <span>Scalping Harian</span>
             </button>
             <button class="tab-btn {{ request()->routeIs('stocks.index') ? 'active' : '' }}" onclick="window.location.href='{{ route('stocks.index') }}'">
                 <i data-lucide="list"></i>
